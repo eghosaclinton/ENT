@@ -166,7 +166,7 @@ h6{
 
 button{
     border: solid 1px white;
-    padding: .75rem 1.5rem;
+    padding: .75rem 1.25rem;
     border-radius: .35rem;
     font-weight: 700;
     font-size: 1rem;
@@ -190,7 +190,7 @@ button{
 
 .read-btn:hover{
     color: darkcyan;
-   background-color: white; 
+    background-color: white; 
 }
 
 .flex-item-head{
@@ -383,11 +383,11 @@ hr{
     margin: 0;
 }
 
-#dark{
+.dark{
     transition: 0.5s ease-in-out;
 }
 
-#dark:hover{
+.dark:hover{
     transform: rotate(-45deg);
 }
 
@@ -399,26 +399,44 @@ hr{
     display: none;
 }
 
+.menu{
+    position: fixed;
+    justify-content: center;
+    width: 83%;
+    color: #000000;
+    height: 7.5svh;
+    padding: .5rem;
+    border-radius: .25rem;
+    left: 0;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+}
+
+.nav{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+#svg-dark{
+    transition: 0.5 ease-in-out;
+    height: 1.75rem;
+    width: 1.75rem;
+}
 
 @media (max-width: 683px) {
-    .menu{
-        position: absolute;
-        width: 100%;
-        color: #000000;
-        height: 100svh;
-        top: 0;
-        /* margin-top: 1rem;
-        padding-top: 1rem; */
-        left: 0;
-        margin: 0;
-        /* justify-content: center; */
-        background-color: #f7f7f7;
-        z-index: 98;
-        /* flex-direction: column-reverse; */
+
+    nav, .icons{
+        display: none;
     }
 
     nav{
-        /* justify-content: center; */
         width: 60%;
         flex-direction: column;
     }
@@ -427,14 +445,16 @@ hr{
         font-size: 1.75rem;
         color: #000000;
     }
+
     .icons{
         color: #000000;
     }
+
     header{
         width: 100%
     }
 
-    .hamburger{
+    .hamburger, .for-mobile{
         display: block;
         height: 3rem;
         z-index: 99;
@@ -455,9 +475,11 @@ hr{
         text-align: center;
 
     }
+
     .about-content, .about-info-content{
         width: 100%;
     }
+
     .about-components-content{
         flex-direction: column;
     }
@@ -488,7 +510,6 @@ hr{
     }
 
     .about-btn{
-        /* text-align: center; */
         width: 50%;
     }
 
@@ -502,7 +523,6 @@ hr{
 
     #services{
         width: 100%;
-
     }
 
     .services-info{
