@@ -47,7 +47,6 @@ nav a{
     color: white;
     text-decoration: none;
     transition: 0.5s ease-in-out;
-    /* padding: .25rem; */
     border-bottom: solid 2px transparent;
 }
 
@@ -167,10 +166,10 @@ h6{
 
 button{
     border: solid 1px white;
-    padding: .5rem 1.25rem;
+    padding: .75rem 1.5rem;
     border-radius: .35rem;
     font-weight: 700;
-    font-size: .75rem;
+    font-size: 1rem;
     transition: 0.5s ease-in-out;
 }
 
@@ -299,6 +298,7 @@ hr{
 
 .services-content{
     padding: 1rem;
+    gap: 1.5rem;
 }
 
 .services-info{
